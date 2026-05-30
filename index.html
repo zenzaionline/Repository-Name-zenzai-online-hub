@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Zenzai Online Hub</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -17,65 +15,63 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7fc;
-color:#333;
+background:#07111f;
+color:#fff;
+line-height:1.6;
 }
 
 nav{
 position:fixed;
 top:0;
 width:100%;
-background:#111827;
+background:rgba(2,6,23,.95);
+backdrop-filter:blur(10px);
 padding:18px;
-z-index:1000;
 text-align:center;
+z-index:1000;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
 margin:0 15px;
 font-weight:600;
+transition:.3s;
 }
 
 nav a:hover{
-color:#60a5fa;
+color:#22d3ee;
 }
 
 .hero{
 height:100vh;
-background:linear-gradient(135deg,#2563eb,#4f46e5);
+background:linear-gradient(135deg,#031b34,#0ea5e9);
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-color:white;
 padding:20px;
 }
 
-.hero-content h1{
+.hero h1{
 font-size:4rem;
 margin-bottom:15px;
+text-shadow:0 0 20px rgba(34,211,238,.7);
 }
 
-.hero-content p{
+.hero p{
 font-size:1.3rem;
 margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-background:white;
-color:#2563eb;
+background:#22d3ee;
+color:#031b34;
 padding:14px 30px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
 }
 
 section{
@@ -86,15 +82,14 @@ padding:90px 10%;
 text-align:center;
 font-size:2.5rem;
 margin-bottom:50px;
-color:#111827;
+color:#22d3ee;
 }
 
 .about{
-text-align:center;
 max-width:900px;
 margin:auto;
+text-align:center;
 font-size:1.1rem;
-line-height:1.8;
 }
 
 .services{
@@ -104,65 +99,55 @@ gap:25px;
 }
 
 .card{
-background:white;
-padding:30px;
+background:#0f172a;
+padding:25px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+border:1px solid #164e63;
+box-shadow:0 10px 25px rgba(34,211,238,.12);
 transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(34,211,238,.25);
 }
 
 .card h3{
-margin-bottom:15px;
+margin-bottom:10px;
+color:#22d3ee;
 }
 
-.portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.project{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+.ai-support{
+background:#0f172a;
+border:1px solid #164e63;
+padding:40px;
+border-radius:20px;
+text-align:center;
+max-width:800px;
+margin:auto;
 }
 
 .contact{
-background:#111827;
-color:white;
+background:linear-gradient(135deg,#020617,#0f172a);
 text-align:center;
-padding:80px 20px;
-}
-
-.contact h2{
-margin-bottom:15px;
-font-size:2.5rem;
-}
-
-.contact p{
-margin-bottom:25px;
 }
 
 .whatsapp-btn{
 display:inline-block;
 background:#25D366;
 color:white;
-padding:15px 35px;
+padding:15px 30px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+margin-top:20px;
 }
 
 footer{
-background:#000;
-color:#aaa;
+background:#020617;
+color:#94a3b8;
 text-align:center;
-padding:20px;
+padding:25px;
 }
 
 .float-whatsapp{
@@ -180,8 +165,17 @@ font-size:30px;
 text-decoration:none;
 color:white;
 box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
 }
 
+@media(max-width:768px){
+.hero h1{
+font-size:2.6rem;
+}
+.hero p{
+font-size:1rem;
+}
+}
 </style>
 </head>
 
@@ -190,26 +184,18 @@ box-shadow:0 5px 15px rgba(0,0,0,.3);
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
+<a href="#support">AI Support</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
+<div>
+<h1>Zenzai Online Hub</h1>
 
-<div class="hero-content">
+<p>All Online Form Services Available on This Platform</p>
 
-<h1>🚀 Zenzai Online Hub</h1>
-
-<p>
-Empowering Businesses Through Technology, AI & Digital Innovation
-</p>
-
-<a href="#services" class="btn">
-Explore Services
-</a>
-
+<a href="#services" class="btn">Explore Services</a>
 </div>
-
 </section>
 
 <section id="about">
@@ -217,18 +203,12 @@ Explore Services
 <h2 class="section-title">About Us</h2>
 
 <div class="about">
-
 <p>
-
-Zenzai Online Hub is a modern digital platform dedicated to helping
-businesses grow through Web Development, Artificial Intelligence,
-Digital Marketing and Innovative Technology Solutions.
-
-We focus on delivering high-quality digital experiences that drive
-success and create long-term value.
-
+Zenzai Online Hub is your trusted digital service platform providing Aadhaar services,
+PAN card applications, Voter ID assistance, EPFO support, scholarship forms,
+government certificates, online applications and professional documentation services.
+Our mission is to make online government and digital services simple, fast and accessible.
 </p>
-
 </div>
 
 </section>
@@ -240,49 +220,70 @@ success and create long-term value.
 <div class="services">
 
 <div class="card">
-<h3>🌐 Web Development</h3>
-<p>Professional websites and business platforms.</p>
+<h3>🪪 Aadhaar Services</h3>
+<p>Updates, corrections and Aadhaar-related support.</p>
 </div>
 
 <div class="card">
-<h3>🤖 AI Solutions</h3>
-<p>Automation, AI tools and smart workflows.</p>
+<h3>💳 PAN Card Services</h3>
+<p>New PAN, corrections and reprint services.</p>
 </div>
 
 <div class="card">
-<h3>📈 Digital Marketing</h3>
-<p>SEO, social media and business growth strategies.</p>
+<h3>🗳️ Voter ID Services</h3>
+<p>Registration, updates and voter support.</p>
 </div>
 
 <div class="card">
-<h3>☁️ Technology Consulting</h3>
-<p>Digital transformation and IT solutions.</p>
+<h3>📸 Passport Size Photos</h3>
+<p>Digital and professional passport photos.</p>
+</div>
+
+<div class="card">
+<h3>🏢 EPFO Services</h3>
+<p>PF claims, KYC updates and account assistance.</p>
+</div>
+
+<div class="card">
+<h3>📜 Government Certificates</h3>
+<p>Domicile, Income, Caste, Birth & Death Certificates.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Scholarship Forms</h3>
+<p>Student scholarship application support.</p>
+</div>
+
+<div class="card">
+<h3>🐄 Animal Loan Forms</h3>
+<p>Application support for animal loan schemes.</p>
+</div>
+
+<div class="card">
+<h3>⌨️ Letter Typing</h3>
+<p>Professional typing and documentation services.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="portfolio">
+<section id="support">
 
-<h2 class="section-title">Our Portfolio</h2>
+<h2 class="section-title">AI Support Assistant</h2>
 
-<div class="portfolio">
+<div class="ai-support">
 
-<div class="project">
-<h3>Business Websites</h3>
-<p>Modern responsive business websites.</p>
-</div>
+<h3>🤖 Smart AI Assistance</h3>
 
-<div class="project">
-<h3>AI Projects</h3>
-<p>Custom AI integrations and automation systems.</p>
-</div>
+<p style="margin-top:15px;">
+Need help finding the right service?
+Our AI Support Assistant helps guide you quickly and efficiently.
+</p>
 
-<div class="project">
-<h3>E-Commerce Solutions</h3>
-<p>Online stores and digital selling platforms.</p>
-</div>
+<p style="margin-top:15px;color:#22d3ee;">
+AI Live Support Coming Soon
+</p>
 
 </div>
 
@@ -290,38 +291,34 @@ success and create long-term value.
 
 <section id="contact" class="contact">
 
-<h2>Let's Work Together</h2>
+<h2 class="section-title">Contact Us</h2>
+
+<p>Need assistance? Contact us directly.</p>
+
+<p style="margin-top:20px;">
+📧 Email: sumit03497@gmail.com
+</p>
 
 <p>
-Ready to grow your business with Zenzai Online Hub?
+📱 WhatsApp: +91 9306003497
 </p>
 
 <a href="https://wa.me/919306003497"
 target="_blank"
 class="whatsapp-btn">
-
 💬 Chat on WhatsApp
-
 </a>
-
-<p style="margin-top:25px;">
-WhatsApp: +91 9306003497
-</p>
 
 </section>
 
 <footer>
-
-© 2025 Zenzai Online Hub. All Rights Reserved.
-
+© 2025 Zenzai Online Hub | All Rights Reserved
 </footer>
 
 <a href="https://wa.me/919306003497"
 target="_blank"
 class="float-whatsapp">
-
 💬
-
 </a>
 
 </body>
