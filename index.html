@@ -3,220 +3,326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Zenzai Online Hub</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
 }
 
-body{<a href="https://wa.me/919306003497" target="_blank" class="whatsapp-btn">
-    💬 Chat on WhatsApp
-</a>
-
-<style>
-.whatsapp-btn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
-    z-index:1000;
-}
-
-.whatsapp-btn:hover{
-    transform:scale(1.05);
-}
-</style>
-    background:#f5f7fa;
-    color:#333;
-}
-
-header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:10px;
-    font-size:1.2rem;
+body{
+background:#f4f7fc;
+color:#333;
 }
 
 nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
+position:fixed;
+top:0;
+width:100%;
+background:#111827;
+padding:18px;
+z-index:1000;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:600;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:white;
+color:#2563eb;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 section{
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
+padding:90px 10%;
 }
 
-.card-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#111827;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-    flex:1;
-    min-width:250px;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact{
+background:#111827;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.contact h2{
+margin-bottom:15px;
+font-size:2.5rem;
+}
+
+.contact p{
+margin-bottom:25px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#000;
+color:#aaa;
+text-align:center;
+padding:20px;
 }
+
+.float-whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
 </style>
 </head>
 
-<body><a href="https://wa.me/919306003497" target="_blank" class="whatsapp-float">
-    💬
-</a>
-
-<style>
-.whatsapp-float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:#fff;
-    border-radius:50%;
-    text-align:center;
-    line-height:60px;
-    font-size:28px;
-    text-decoration:none;
-    box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    z-index:9999;
-}
-</style>
-
-<header>
-    <h1>🚀 Zenzai Online Hub</h1>
-    <p>Business • AI • Technology • Portfolio • Blog • Store</p>
-</header>
+<body>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#store">Store</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
 </nav>
 
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🚀 Zenzai Online Hub</h1>
+
+<p>
+Empowering Businesses Through Technology, AI & Digital Innovation
+</p>
+
+<a href="#services" class="btn">
+Explore Services
+</a>
+
+</div>
+
+</section>
+
 <section id="about">
-    <h2>About Us</h2>
-    <p>
-        Welcome to Zenzai Online Hub. We provide business,
-        technology, AI solutions, digital services and online resources.
-    </p>
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<p>
+
+Zenzai Online Hub is a modern digital platform dedicated to helping
+businesses grow through Web Development, Artificial Intelligence,
+Digital Marketing and Innovative Technology Solutions.
+
+We focus on delivering high-quality digital experiences that drive
+success and create long-term value.
+
+</p>
+
+</div>
+
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>🌐 Web Development</h3>
-            <p>Professional website development services.</p>
-        </div>
 
-        <div class="card">
-            <h3>🤖 AI Solutions</h3>
-            <p>AI tools, automation and smart solutions.</p>
-        </div>
+<h2 class="section-title">Our Services</h2>
 
-        <div class="card">
-            <h3>📈 Digital Marketing</h3>
-            <p>Grow your business online.</p>
-        </div>
-    </div>
-</section>
+<div class="services">
 
-<section id="store">
-    <h2>Online Store</h2>
-    <p>Your products and services can be displayed here.</p>
+<div class="card">
+<h3>🌐 Web Development</h3>
+<p>Professional websites and business platforms.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Solutions</h3>
+<p>Automation, AI tools and smart workflows.</p>
+</div>
+
+<div class="card">
+<h3>📈 Digital Marketing</h3>
+<p>SEO, social media and business growth strategies.</p>
+</div>
+
+<div class="card">
+<h3>☁️ Technology Consulting</h3>
+<p>Digital transformation and IT solutions.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Showcase your completed projects and achievements.</p>
+
+<h2 class="section-title">Our Portfolio</h2>
+
+<div class="portfolio">
+
+<div class="project">
+<h3>Business Websites</h3>
+<p>Modern responsive business websites.</p>
+</div>
+
+<div class="project">
+<h3>AI Projects</h3>
+<p>Custom AI integrations and automation systems.</p>
+</div>
+
+<div class="project">
+<h3>E-Commerce Solutions</h3>
+<p>Online stores and digital selling platforms.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="blog">
-    <h2>Latest Blog Posts</h2>
-    <p>Share news, tutorials and updates with your visitors.</p>
-</section>
+<section id="contact" class="contact">
 
-<section id="contact"><section id="contact" style="background:#111;color:white;padding:60px 20px;margin-top:50px;">
-    <div style="max-width:1100px;margin:auto;text-align:center;">
+<h2>Let's Work Together</h2>
 
-        <h2 style="font-size:36px;margin-bottom:15px;">📞 Contact Zenzai Online Hub</h2>
+<p>
+Ready to grow your business with Zenzai Online Hub?
+</p>
 
-        <p style="font-size:18px;margin-bottom:25px;">
-            हमसे सीधे WhatsApp पर संपर्क करें।
-        </p>
+<a href="https://wa.me/919306003497"
+target="_blank"
+class="whatsapp-btn">
 
-        <a href="https://wa.me/919306003497"
-           target="_blank"
-           style="
-           display:inline-block;
-           background:#25D366;
-           color:white;
-           text-decoration:none;
-           padding:15px 30px;
-           border-radius:50px;
-           font-size:18px;
-           font-weight:bold;">
-           💬 Chat on WhatsApp
-        </a>
+💬 Chat on WhatsApp
 
-        <div style="margin-top:35px;">
-            <p>📱 WhatsApp: +91 9306003497</p>
-            <p>🌐 Zenzai Online Hub</p>
-        </div>
+</a>
 
-    </div>
-</section>
+<p style="margin-top:25px;">
+WhatsApp: +91 9306003497
+</p>
 
-<footer style="background:#000;color:#aaa;text-align:center;padding:20px;">
-    © 2025 Zenzai Online Hub | All Rights Reserved
-</footer>
 </section>
 
 <footer>
-    <p>© 2025 Zenzai Online Hub. All Rights Reserved.</p>
+
+© 2025 Zenzai Online Hub. All Rights Reserved.
+
 </footer>
+
+<a href="https://wa.me/919306003497"
+target="_blank"
+class="float-whatsapp">
+
+💬
+
+</a>
 
 </body>
 </html>
